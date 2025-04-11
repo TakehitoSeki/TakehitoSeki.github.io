@@ -1,9 +1,9 @@
 [
   {
     "id": "career-7",
-    "position": "講師",
-    "organization": "東京大学大学院工学系研究科総合研究機構",
-    "location": "東京",
+    "position": "Lecturer",
+    "organization": "The University of Tokyo",
+    "location": "Tokyo, Japan",
     "startDate": "2024/3",
     "endDate": "",
     "description": "",
@@ -13,7 +13,7 @@
     "id": "career-6",
     "position": "PRESTO Researcher (Concurrent Position)",
     "organization": "Japan Science and Technology Agency",
-    "location": "東京",
+    "location": "Tokyo, Japan",
     "startDate": "2021.10",
     "endDate": "2022.3",
     "description": "",
@@ -22,8 +22,8 @@
   {
     "id": "career-5",
     "position": "Assistant Professor",
-    "organization": "東京大学大学院工学系研究科総合研究機構",
-    "location": "東京",
+    "organization": "The University of Tokyo",
+    "location": "Tokyo, Japan",
     "startDate": "2019/4",
     "endDate": "2024/2",
     "description": "",
@@ -32,8 +32,8 @@
   {
     "id": "career-4",
     "position": "Research Fellow",
-    "organization": "東京大学大学院工学系研究科総合研究機構",
-    "location": "東京",
+    "organization": "The University of Tokyo",
+    "location": "Tokyo, Japan",
     "startDate": "2015/4",
     "endDate": "2019/3",
     "description": "",
@@ -42,8 +42,8 @@
   {
     "id": "career-3",
     "position": "JSPS Research Fellow (PD)",
-    "organization": "東京大学大学院工学系研究科",
-    "location": "東京",
+    "organization": "The University of Tokyo",
+    "location": "Tokyo, Japan",
     "startDate": "2014/4",
     "endDate": "2015/3",
     "description": "",
@@ -52,8 +52,8 @@
   {
     "id": "career-2",
     "position": "JSPS Research Fellow (DC2)",
-    "organization": "東京大学大学院工学系研究科",
-    "location": "東京",
+    "organization": "The University of Tokyo",
+    "location": "Tokyo, Japan",
     "startDate": "2014/3",
     "endDate": "2013/4",
     "description": "",
@@ -61,9 +61,9 @@
   }
   {
     "id": "career-1",
-    "position": "博士課程",
-    "organization": "東京大学大学院工学系研究科",
-    "location": "東京",
+    "position": "Ph.D Student",
+    "organization": "The University of Tokyo",
+    "location": "Tokyo, Japan",
     "startDate": "2014/3",
     "endDate": "2011/4",
     "description": "",
