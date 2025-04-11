@@ -10,21 +10,22 @@
     "contact": "連絡先"
   },
   "bio": {
-    "name": "Your Name",
-    "nameJp": "あなたの名前",
+    "name": "Takehito Seki",
+    "nameJp": "関 岳人",
     "phd": "Ph.D.",
     "phdJp": "博士（工学）",
-    "position": "博士研究員",
+    "position": "講師",
     "affiliation": "東京大学 総合研究機構",
-    "github": "https://github.com/yourusername",
-    "scholar": "https://scholar.google.com/citations?user=your-id",
-    "orcid": "https://orcid.org/0000-0000-0000-0000",
-    "researchmap": "https://researchmap.jp/yourusername",
-    "linkedin": "https://www.linkedin.com/in/yourusername/",
+    "github": "https://github.com/TakehitoSeki",
+    "scholar": "https://scholar.google.com/citations?user=9aF8exwAAAAJ",
+    "orcid": "https://orcid.org/0000-0001-5437-6351",
+    "researchmap": "https://researchmap.jp/sekitake",
+    "linkedin": "",
     "researchInterests": "研究興味",
     "researchTags": [
-      "数学",
-      "物理学"
+      "走査透過電子顕微鏡 (STEM)法",
+      ”最適明視野 (OBF) STEM法”
+      "微分位相コントラスト (DPC) STEM法"
     ]
   },
   "publications": {
@@ -60,13 +61,13 @@
     "location": "所在地",
     "relatedLinks": "関連リンク",
     "email": "メールアドレス",
-    "emailAdress": "your.email[at]example.com",
+    "emailAdress": "seki[at]sigma.t.u-tokyo.ac.jp",
     "phone": "電話番号",
     "phoneNumber": "+81-3-5841-7689",
     "address": "住所",
     "addressLine1": "電子顕微鏡材料学研究室",
     "addressLine2": "東京大学",
-    "addressLine3": "〒113-0032 東京都文京区弥生2-11-16東京大学工学部9号館4F419号室",
+    "addressLine3": "〒113-0032 東京都文京区弥生2-11-16東京大学工学部9号館6F622号室",
     "socialMedia": "",
     "linkedin": "",
     "facebook": "",
