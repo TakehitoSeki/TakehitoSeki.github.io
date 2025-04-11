@@ -11,8 +11,8 @@
   },
   {
     "id": "career-6",
-    "position": "PRESTO Researcher (Concurrent Position)",
-    "organization": "Japan Science and Technology Agency",
+    "position": "さきがけ研究者",
+    "organization": "科学技術振興機構",
     "location": "東京",
     "startDate": "2021.10",
     "endDate": "2022.3",
@@ -21,7 +21,7 @@
   },
   {
     "id": "career-5",
-    "position": "Assistant Professor",
+    "position": "助教",
     "organization": "東京大学大学院工学系研究科総合研究機構",
     "location": "東京",
     "startDate": "2019/4",
@@ -31,7 +31,7 @@
   },
   {
     "id": "career-4",
-    "position": "Research Fellow",
+    "position": "特任研究員",
     "organization": "東京大学大学院工学系研究科総合研究機構",
     "location": "東京",
     "startDate": "2015/4",
@@ -41,7 +41,7 @@
   },
   {
     "id": "career-3",
-    "position": "JSPS Research Fellow (PD)",
+    "position": "日本学術振興会特別研究員 (PD)",
     "organization": "東京大学大学院工学系研究科",
     "location": "東京",
     "startDate": "2014/4",
@@ -51,7 +51,7 @@
   },
   {
     "id": "career-2",
-    "position": "JSPS Research Fellow (DC2)",
+    "position": "日本学術振興会特別研究員 (DC2)",
     "organization": "東京大学大学院工学系研究科",
     "location": "東京",
     "startDate": "2014/3",
