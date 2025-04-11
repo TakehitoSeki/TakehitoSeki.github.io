@@ -162,16 +162,16 @@ const formattedMisc = miscResult.data
   .map(misc => {
   let authors = '';
   if (misc['著者(英語)']) {
-    authors = misc['著者(英語)'].replace(/^\[|\]$/g, '');
+    authors = misc['著者(英語)'].replace(/[\\\[\]]/g, '');
   } else if (misc['著者(日本語)']) {
-    authors = misc['著者(日本語)'].replace(/^\[|\]$/g, '');
+    authors = misc['著者(日本語)'].replace(/[\\\[\]]/g, '');
   }
 
   let authorsJa = '';
   if (misc['著者(日本語)']) {
-    authorsJa = misc['著者(日本語)'].replace(/^\[|\]$/g, '');
+    authorsJa = misc['著者(日本語)'].replace(/[\\\[\]]/g, '');
   } else if (misc['著者(英語)']) {
-    authorsJa = misc['著者(英語)'].replace(/^\[|\]$/g, '');
+    authorsJa = misc['著者(英語)'].replace(/[\\\[\]]/g, '');
   }
 
   return {
