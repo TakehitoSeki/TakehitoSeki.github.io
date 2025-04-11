@@ -1,6 +1,6 @@
 [
   {
-    "id": "career-1",
+    "id": "career-7",
     "position": "Lecturer",
     "organization": "The University of Tokyo",
     "location": "Tokyo, Japan",
@@ -10,7 +10,7 @@
     "type": "work"
   },
   {
-    "id": "career-2",
+    "id": "career-6",
     "position": "PRESTO Researcher (Concurrent Position)",
     "organization": "Japan Science and Technology Agency",
     "location": "Tokyo, Japan",
@@ -20,7 +20,7 @@
     "type": "work"
   },
   {
-    "id": "career-3",
+    "id": "career-5",
     "position": "Assistant Professor",
     "organization": "The University of Tokyo",
     "location": "Tokyo, Japan",
@@ -40,7 +40,7 @@
     "type": "work"
   }
   {
-    "id": "career-5",
+    "id": "career-3",
     "position": "JSPS Research Fellow (PD)",
     "organization": "The University of Tokyo",
     "location": "Tokyo, Japan",
@@ -50,7 +50,7 @@
     "type": "work"
   }
   {
-    "id": "career-6",
+    "id": "career-2",
     "position": "JSPS Research Fellow (DC2)",
     "organization": "The University of Tokyo",
     "location": "Tokyo, Japan",
@@ -60,7 +60,7 @@
     "type": "work"
   }
   {
-    "id": "career-7",
+    "id": "career-1",
     "position": "Ph.D Student",
     "organization": "The University of Tokyo",
     "location": "Tokyo, Japan",
