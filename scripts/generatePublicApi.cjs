@@ -61,7 +61,12 @@ const awardsResult = readCsv(awardsPath);
 const researchProjectsResult = readCsv(researchProjectsPath);
 
 // データ処理関数（前と同じ）
-const formattedPapers = papersResult.data.map(paper => {
+const formattedPapers = papersResult.data
+  .filter(presentation => {
+    const disclosureStatus = presentation['公開の有無'] ;
+    return disclosureStatus && disclosureStatus.toLowerCase() === 'disclosed';
+  })
+  .map(paper => {
   let authors = '';
   if (paper['著者(英語)']) {
     authors = paper['著者(英語)'].replace(/^\[|\]$/g, '');
