@@ -154,7 +154,12 @@ const formattedPresentations = presentationsResult.data
   };
 });
 
-const formattedMisc = miscResult.data.map(misc => {
+const formattedMisc = miscResult.data
+  .filter(misc => {
+    const disclosureStatus = misc['公開の有無'] ;
+    return disclosureStatus && disclosureStatus.toLowerCase() === 'disclosed';
+  })
+  .map(misc => {
   let authors = '';
   if (misc['著者(英語)']) {
     authors = misc['著者(英語)'].replace(/^\[|\]$/g, '');
