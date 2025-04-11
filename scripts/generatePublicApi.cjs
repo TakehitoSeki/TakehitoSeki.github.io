@@ -189,7 +189,12 @@ const formattedMisc = miscResult.data
   };
 });
 
-const formattedAwards = awardsResult.data.map(award => {
+const formattedAwards = awardsResult.data
+  .filter(award => {
+    const disclosureStatus = award['公開の有無'] ;
+    return disclosureStatus && disclosureStatus.toLowerCase() === 'disclosed';
+  })
+  .map(award => {
   return {
     id: award.ID || `award-${Math.random().toString(36).substr(2, 9)}`,
     title: award['賞名(英語)'] || award['賞名(日本語)'] || 'Untitled',
@@ -202,7 +207,12 @@ const formattedAwards = awardsResult.data.map(award => {
   };
 });
 
-const formattedResearchProjects = researchProjectsResult.data.map(researchProject => {
+const formattedResearchProjects = researchProjectsResult.data
+  .filter(researchProject => {
+    const disclosureStatus = researchProject['公開の有無'] ;
+    return disclosureStatus && disclosureStatus.toLowerCase() === 'disclosed';
+  })
+  .map(researchProject => {
   return {
     id: researchProject.ID || `researchProject-${Math.random().toString(36).substr(2, 9)}`,
     title: researchProject['制度名(英語)'] || researchProject['制度名(日本語)'] || '',
