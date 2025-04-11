@@ -1,42 +1,72 @@
 [
   {
     "id": "career-1",
-    "position": "B.Eng. in Materials Engineering",
+    "position": "Lecturer",
     "organization": "The University of Tokyo",
     "location": "Tokyo, Japan",
-    "startDate": "2016",
-    "endDate": "2020",
+    "startDate": "2024/3",
+    "endDate": "",
     "description": "",
-    "type": "education"
+    "type": "work"
   },
   {
     "id": "career-2",
-    "position": "M.Eng. in Materials Engineering",
-    "organization": "The University of Tokyo",
+    "position": "PRESTO Researcher (Concurrent Position)",
+    "organization": "Japan Science and Technology Agency",
     "location": "Tokyo, Japan",
-    "startDate": "2020",
-    "endDate": "2022",
+    "startDate": "2021.10",
+    "endDate": "2022.3",
     "description": "",
-    "type": "education"
+    "type": "work"
   },
   {
     "id": "career-3",
-    "position": "Ph.D. in Materials Engineering",
+    "position": "Assistant Professor",
     "organization": "The University of Tokyo",
     "location": "Tokyo, Japan",
-    "startDate": "2022",
-    "endDate": "2025",
+    "startDate": "2019/4",
+    "endDate": "2024/2",
     "description": "",
-    "type": "education"
+    "type": "work"
   },
   {
     "id": "career-4",
-    "position": "Postdoctoral Researcher",
+    "position": "Research Fellow",
     "organization": "The University of Tokyo",
     "location": "Tokyo, Japan",
-    "startDate": "2025",
-    "endDate": null,
+    "startDate": "2015/4",
+    "endDate": "2019/3",
     "description": "",
     "type": "work"
+  }
+  {
+    "id": "career-5",
+    "position": "JSPS Research Fellow (PD)",
+    "organization": "The University of Tokyo",
+    "location": "Tokyo, Japan",
+    "startDate": "2014/4",
+    "endDate": "2015/3",
+    "description": "",
+    "type": "work"
+  }
+  {
+    "id": "career-6",
+    "position": "JSPS Research Fellow (DC2)",
+    "organization": "The University of Tokyo",
+    "location": "Tokyo, Japan",
+    "startDate": "2014/3",
+    "endDate": "2013/4",
+    "description": "",
+    "type": "work"
+  }
+  {
+    "id": "career-7",
+    "position": "Ph.D Student",
+    "organization": "The University of Tokyo",
+    "location": "Tokyo, Japan",
+    "startDate": "2014/3",
+    "endDate": "2011/4",
+    "description": "",
+    "type": "education"
   }
 ]
