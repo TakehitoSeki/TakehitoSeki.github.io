@@ -98,16 +98,16 @@ const formattedPapers = papersResult.data
 const formattedPresentations = presentationsResult.data.map(presentation => {
   let speakers = '';
   if (presentation['講演者(英語)']) {
-    speakers = presentation['講演者(英語)'].replace(/^\[|\]$/g, '');
+    speakers = presentation['講演者(英語)'].replace(/[\\\[\]]/g, '');
   } else if (presentation['講演者(日本語)']) {
-    speakers = presentation['講演者(日本語)'].replace(/^\[|\]$/g, '');
+    speakers = presentation['講演者(日本語)'].replace(/[\\\[\]]/g, '');
   }
 
   let speakersJa = '';
   if (presentation['講演者(日本語)']) {
-    speakersJa = presentation['講演者(日本語)'].replace(/^\[|\]$/g, '');
+    speakersJa = presentation['講演者(日本語)'].replace(/[\\\[\]]/g, '');
   } else if (presentation['講演者(英語)']) {
-    speakersJa = presentation['講演者(英語)'].replace(/^\[|\]$/g, '');
+    speakersJa = presentation['講演者(英語)'].replace(/[\\\[\]]/g, '');
   }
 
   let year = '';
