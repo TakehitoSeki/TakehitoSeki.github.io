@@ -62,8 +62,8 @@ const researchProjectsResult = readCsv(researchProjectsPath);
 
 // データ処理関数（前と同じ）
 const formattedPapers = papersResult.data
-  .filter(presentation => {
-    const disclosureStatus = presentation['公開の有無'] ;
+  .filter(paper => {
+    const disclosureStatus = paper['公開の有無'] ;
     return disclosureStatus && disclosureStatus.toLowerCase() === 'disclosed';
   })
   .map(paper => {
@@ -95,7 +95,12 @@ const formattedPapers = papersResult.data
   };
 });
 
-const formattedPresentations = presentationsResult.data.map(presentation => {
+const formattedPresentations = presentationsResult.data
+  .filter(presentation => {
+    const disclosureStatus = presentation['公開の有無'] ;
+    return disclosureStatus && disclosureStatus.toLowerCase() === 'disclosed';
+  })
+  .map(presentation => {
   let speakers = '';
   if (presentation['講演者(英語)']) {
     speakers = presentation['講演者(英語)'].replace(/[\\\[\]]/g, '');
