@@ -1,9 +1,11 @@
 awards
-ID,賞名(日本語),賞名(英語),タイトル(日本語),タイトル(英語),授与機関(日本語),授与機関(英語),受賞年月,主要な業績かどうか
-example-id,賞名,"Example Award Name",タイトル,"Example Title",授与機関,"Example Awarder",2025-03,false
-49341459,青葉研究奨励賞,"Aoba Research Encouragement Prize",null,null,青葉研究奨励会,"Aoba Research Foundation",2025-03,false
-48550881,"Institutional Participant in the Rising Stars Women in Science Workshop",null,null,null,null,null,2024-11,false
-46398327,理学系研究科研究科長賞（研究最優秀）,"Dean's Award (Excellence in Research)",null,null,京都大学,"Kyoto University",2023-03,false
-46398303,日本生物学会第64回シンポジウム最優秀ポスター賞,null,null,null,日本生物学会,null,2021-11,false
-46398299,日本化学学会・物理学会奨学賞,null,null,null,"日本化学学会 物理学会",null,2018-03,false
-46398295,理学部長賞,"Dean's Award",null,null,京都大学,"Kyoto University",2018-03,false
+アクション名,アクションタイプ,類似業績マージ優先度,ID,賞名(日本語),賞名(英語),受賞者・グループ(日本語),受賞者・グループ(英語),タイトル(日本語),タイトル(英語),授与機関(日本語),授与機関(英語),概要(日本語),概要(英語),受賞年月,受賞区分,受賞国・地域,URL,主要な業績かどうか,公開の有無
+insert,merge,null,46763210,和文誌賞,null,"[大江 耕介,関 岳人,河野祐二,中村明穂,幾原雄一,柴田直哉]",null,"OBF STEM法を利用した低ドーズ原子分解能観察",null,日本顕微鏡学会,null,null,null,2024-05,null,null,null,false,disclosed
+insert,merge,null,46648707,萌芽賞,null,"[関 岳人]",null,null,null,東京大学大学院工学系研究科,null,null,null,2024-03,null,null,null,false,disclosed
+insert,merge,null,41588592,蔡安邦賞,"AnPang Tsai Award","[関 岳人]","[Takehito Seki]",null,null,準結晶研究会,"Quasicrystals meeting",null,null,2023-03,japan_society,null,null,false,disclosed
+insert,merge,null,36395136,奨励賞,"Encouragement Award",[関岳人],"[Takehito Seki]",走査透過電子顕微鏡における位相結像理論の構築と新規結像法開発,"Theoretical Study of Phase Imaging and Development of New Imaging Technique in Scanning Transmission Electron Microscopy",日本顕微鏡学会,"The Japanese Society of Microscopy",null,null,2022-05,null,null,null,false,disclosed
+insert,merge,null,32033856,風戸研究奨励賞,"Kazato Research Encouragement Prize",[関岳人],"[Takehito Seki]","高速分割型 STEM 検出器による超高感度原子結像法の開発と応用","Development and application of ultra-high sensitive atomic-resolution imaging using a high-speed segmented STEM detector",風戸研究奨励会,"Kazato Research Foundation",null,null,2021-03,null,null,null,false,disclosed
+insert,merge,null,32033850,"論文賞 (顕微鏡法基礎部門)","Award for Scientific Paper (Fundamentals)","[Akimitsu Ishizuka,Masaaki Oka,Takehito Seki,Naoya Shibata,Kazuo Ishizuka]","[Akimitsu Ishizuka,Masaaki Oka,Takehito Seki,Naoya Shibata,Kazuo Ishizuka]","Boundary-artifact-free determination of potential distribution from differential phase contrast signals","Boundary-artifact-free determination of potential distribution from differential phase contrast signals",日本顕微鏡学会,"The Japanese Society of Microscopy",null,null,2019-05,null,null,null,false,disclosed
+insert,merge,null,32033852,"論文賞 (応用研究 非生物部門)","Award for Scientific Paper (Materials)","[Takehito Seki,Eiji Abe]","[Takehito Seki,Eiji Abe]","Local cluster symmetry of a highly ordered quasicrystalline Al58Cu26Ir16 extracted through multivariate analysis of STEM images","Local cluster symmetry of a highly ordered quasicrystalline Al58Cu26Ir16 extracted through multivariate analysis of STEM images",日本顕微鏡学会,"The Japanese Society of Microscopy",null,null,2017-05,null,null,null,false,disclosed
+insert,merge,null,32033853,"Best Poster Prize","Best Poster Prize","[Takehito Seki]","[Takehito Seki]",null,null,"12th International Conference on Quasicrystals","12th International Conference on Quasicrystals",null,null,2013-09,null,null,null,false,disclosed
+insert,merge,null,32033855,"Young Scientist Award","Young Scientist Award","[Takehito Seki]","[Takehito Seki]",null,null,"The 6th Asian International Workshop on Quasicrystals","The 6th Asian International Workshop on Quasicrystals",null,null,2011-05,null,null,null,false,disclosed
