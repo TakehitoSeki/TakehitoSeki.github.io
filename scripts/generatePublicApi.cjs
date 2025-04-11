@@ -69,9 +69,9 @@ const formattedPapers = papersResult.data
   .map(paper => {
   let authors = '';
   if (paper['著者(英語)']) {
-    authors = paper['著者(英語)'].replace(/^\[|\]$/g, '');
+    authors = paper['著者(英語)'].replace(/[\\\[\]]/g, '');
   } else if (paper['著者(日本語)']) {
-    authors = paper['著者(日本語)'].replace(/^\[|\]$/g, '');
+    authors = paper['著者(日本語)'].replace(/[\\\[\]]/g, '');
   }
   let authorsJa = '';
   if (paper['著者(日本語)']) {
