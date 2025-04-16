@@ -331,6 +331,8 @@ fs.writeFileSync(
   JSON.stringify(sortedPatents, null, 2)
 );
 
+console.log(sortedPatents); // 内容確認
+
 
 // すべての年のリストを抽出
 const yearsSet = new Set();
