@@ -295,9 +295,9 @@ const Awards: React.FC = () => {
               {activeTab === "patents" && patents.length > 0 && (
                 <>
                   <div className="grid md:grid-cols-2 gap-4">
-                    {getDisplayedItems(grants).map((grant) => (
+                    {getDisplayedItems(patents).map((patent) => (
                       <div
-                        key={grant.id}
+                        key={patent.id}
                         className="p-4 bg-white rounded-lg shadow-sm"
                       >
                         <h4 className="text-lg font-medium text-primary">
