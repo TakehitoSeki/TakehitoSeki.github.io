@@ -78,6 +78,22 @@ export interface Project {
   languageColors: string[];
 }
 
+export interface Patent {
+  id: string;
+  title: string;
+  titleJa: string;
+  applicationNumber: string;
+  publicationNumber: string;
+  patentNumber: string;
+  applicant: string;
+  applicantJa: string;
+  applicationDate: string;
+  publicationDate: string;
+  registrationDate: string;
+  issueDate: string;
+  isMainWork: boolean;
+}
+
 export interface CareerItem {
   id: string;
   position: string;
