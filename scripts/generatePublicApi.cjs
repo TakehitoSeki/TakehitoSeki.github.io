@@ -259,8 +259,8 @@ const formattedPatents = patentsResult.data
     id: patents.ID || `patents-${Math.random().toString(36).substr(2, 9)}`,
     title: patents['産業財産権名(英語)'] || patents['産業財産権名(日本語)'] || 'Untitled',
     titleJa: patents['産業財産権名(日本語)'] || patents['産業財産権名(英語)'] || 'Untitled',
-    authors: authors;
-    authorsJa: authorsJa;
+    authors: authors,
+    authorsJa: authorsJa,
     applicationNumber: patents['出願番号'] || '',
     publicationNumber: patents['公開番号'] || '',
     patentNumber: patents['特許番号/登録番号'] || '',
