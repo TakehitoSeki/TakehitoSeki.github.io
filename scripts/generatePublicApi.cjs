@@ -8,6 +8,7 @@ const presentationsPath = path.join(__dirname, '../data/rm_presentations.csv');
 const miscPath = path.join(__dirname, '../data/rm_misc.csv');
 const awardsPath = path.join(__dirname, '../data/rm_awards.csv');
 const researchProjectsPath = path.join(__dirname, '../data/rm_research_projects.csv');
+const patentsPath=path.join(__dirname, '../data/rm_industrial_property_rights.csv')
 
 // 出力先ディレクトリ
 const outputDir = path.join(__dirname, '../public/api');
@@ -59,6 +60,9 @@ const awardsResult = readCsv(awardsPath);
 
 // RESEARCH PROJECTS CSVの処理
 const researchProjectsResult = readCsv(researchProjectsPath);
+
+// 産業財産権CSVの処理
+const patentsResult=readCsv(patentsPath);
 
 // データ処理関数（前と同じ）
 const formattedPapers = papersResult.data
@@ -232,6 +236,42 @@ const formattedResearchProjects = researchProjectsResult.data
   };
 });
 
+const fromattedPatents = patentsResult.data
+  .filter(patents => {
+    const disclosureStatus = patents['公開の有無'] ;
+    return disclosureStatus && disclosureStatus.toLowerCase() === 'disclosed';
+  })
+  .map(patents => {
+  let authors = '';
+  if (misc['発明者/考案者/創作者(英語)']) {
+    authors = patents['発明者/考案者/創作者(英語)'].replace(/[\\\[\]]/g, '');
+  } else if (patents['発明者/考案者/創作者(日本語)']) {
+    authors = patents['発明者/考案者/創作者(日本語)'].replace(/[\\\[\]]/g, '');
+  }
+
+  let authorsJa = '';
+  if (misc['発明者/考案者/創作者(日本語)']) {
+    authorsJa = patents['発明者/考案者/創作者(日本語)'].replace(/[\\\[\]]/g, '');
+  } else if (misc['発明者/考案者/創作者(英語)']) {
+    authorsJa = patents['発明者/考案者/創作者(英語)'].replace(/[\\\[\]]/g, '');
+  }
+  return {
+    id: patents.ID || `patents-${Math.random().toString(36).substr(2, 9)}`,
+    title: patents['産業財産権名(英語)'] || patents['産業財産権名(日本語)'] || 'Untitled',
+    titleJa: patents['産業財産権名(日本語)'] || patents['産業財産権名(英語)'] || 'Untitled',
+    applicationNumber: patents['出願番号'] || '',
+    publicationNumber: patents['公開番号'] || '',
+    putentNumber: patents['特許番号/登録番号'] || '',
+    applicant: patents['出願人(機関)(英語)'] || patents['出願人(機関)(日本語)'] || '',
+    applicantJa: patents['出願人(機関)(日本語)'] || patents['出願人(機関)(英語)'] || '',
+    applicationDate: patents['出願日'] || '',
+    publicationDate: patents['公開日'] || '',
+    registrationDate: patents['登録日'] || '',
+    issueDate: patents['発行日'] || '',
+    isMainWork: isTrue(patents['主要な業績かどうか'])
+  };
+});
+
 
 // 日付でソート
 const sortedPapers = formattedPapers.sort((a, b) => {
@@ -252,6 +292,10 @@ const sortedAwards = formattedAwards.sort((a, b) => {
 
 const sortedResearchProjects = formattedResearchProjects.sort((a, b) => {
   return (b.yearFrom + b.monthFrom) - (a.yearFrom + a.monthFrom);
+});
+
+const sortedPatents = formattedPatents.sort((a, b) => {
+  return new Date(b.date) - new Date(a.date);
 });
 
 
@@ -280,6 +324,11 @@ fs.writeFileSync(
 fs.writeFileSync(
   path.join(outputDir, 'researchProjects.json'),
   JSON.stringify(sortedResearchProjects, null, 2)
+);
+
+fs.writeFileSync(
+  path.join(outputDir, 'patents.json'),
+  JSON.stringify(sortedPatents, null, 2)
 );
 
 
