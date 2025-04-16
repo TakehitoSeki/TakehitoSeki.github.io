@@ -252,7 +252,7 @@ const fromattedPatents = patentsResult.data
   let authorsJa = '';
   if (misc['発明者/考案者/創作者(日本語)']) {
     authorsJa = patents['発明者/考案者/創作者(日本語)'].replace(/[\\\[\]]/g, '');
-  } else if (misc['発明者/考案者/創作者(英語)']) {
+  } else if (patents['発明者/考案者/創作者(英語)']) {
     authorsJa = patents['発明者/考案者/創作者(英語)'].replace(/[\\\[\]]/g, '');
   }
   return {
