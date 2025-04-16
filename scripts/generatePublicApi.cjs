@@ -236,7 +236,7 @@ const formattedResearchProjects = researchProjectsResult.data
   };
 });
 
-const fromattedPatents = patentsResult.data
+const formattedPatents = patentsResult.data
   .filter(patents => {
     const disclosureStatus = patents['公開の有無'] ;
     return disclosureStatus && disclosureStatus.toLowerCase() === 'disclosed';
