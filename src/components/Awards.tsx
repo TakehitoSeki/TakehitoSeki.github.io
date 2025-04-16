@@ -9,7 +9,7 @@ const Awards: React.FC = () => {
   const { t, i18n } = useTranslation();
   const [awards, setAwards] = useState<Award[]>([]);
   const [grants, setGrants] = useState<Grant[]>([]);
-  const [patents, setPatents] = useState<Grant[]>([]);
+  const [patents, setPatents] = useState<Patent[]>([]);
   const [projects, setProjects] = useState<Project[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [activeTab, setActiveTab] = useState<TabType>("awards");
