@@ -302,9 +302,6 @@ const Awards: React.FC = () => {
                       >
                         <h4 className="text-lg font-medium text-primary">
                           {i18n.language == "en" ? patent.title : patent.titleJa}{" "}
-                          // {i18n.language == "en"
-                          //  ? grant.subject
-                          //  : grant.subjectJa}
                         </h4>
                         <p className="text-gray-600">
                           {patent.applicationNumber && patent.applicationNumber.trim() !== "" ? (
