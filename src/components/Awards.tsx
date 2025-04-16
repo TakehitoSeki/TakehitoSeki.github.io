@@ -297,7 +297,7 @@ const Awards: React.FC = () => {
               {/* 特許等 */}
               {activeTab === "patents" && patents.length > 0 && (
                 <>
-                  <div className="grid md:grid-cols-2 gap-4">
+                  <div className="grid md:grid-cols-1 gap-4">
                     {getDisplayedItems(patents).map((patent) => (
                       <div
                         key={patent.id}
