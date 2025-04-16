@@ -14,7 +14,7 @@ const Awards: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [activeTab, setActiveTab] = useState<TabType>("awards");
   const [showAll, setShowAll] = useState<boolean>(false);
-  const maxItems = 6;
+  const maxItems = 12;
 
   useEffect(() => {
     const fetchData = async () => {
