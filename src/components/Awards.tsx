@@ -50,10 +50,13 @@ const Awards: React.FC = () => {
         const setDefaultActiveTab = () => {
           if (awardsData.length > 0) {
             setActiveTab("awards");
+            console.log(awardsData);
           } else if (grantsData.length > 0) {
             setActiveTab("grants");
+            console.log(grantsData);
           } else if (patentsData.length >0) {
             setActiveTab("patents");
+            console.log(patentsData);
           } else if (projectsData.length > 0) {
             setActiveTab("projects");
           }
