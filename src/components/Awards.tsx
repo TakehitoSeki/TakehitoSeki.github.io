@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Award, Grant, Project } from "../types";
+import { Award, Patent, Project } from "../types";
 
 // タブの種類を定義
-type TabType = "awards" | "grants" | "projects";
+type TabType = "awards" | "grants" | "patents" | "projects";
 
 const Awards: React.FC = () => {
   const { t, i18n } = useTranslation();
   const [awards, setAwards] = useState<Award[]>([]);
   const [grants, setGrants] = useState<Grant[]>([]);
+  const [patents, setPatents] = useState<Grant[]>([]);
   const [projects, setProjects] = useState<Project[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [activeTab, setActiveTab] = useState<TabType>("awards");
@@ -22,6 +23,7 @@ const Awards: React.FC = () => {
         // 言語に応じたJSONファイルのパス
         const awardsPath = `/api/awards.json`;
         const grantsPath = `/api/researchProjects.json`;
+        const patentsPath = `/api/patents.json`;
         const projectsPath = `./content/etc/projects_${i18n.language}.json`;
 
         // 並列でデータをフェッチ
@@ -29,16 +31,19 @@ const Awards: React.FC = () => {
           await Promise.all([
             fetch(awardsPath),
             fetch(grantsPath),
+            fetch(patentsPath),
             fetch(projectsPath),
           ]);
 
         // 各データを解析
         const awardsData = await awardsResponse.json();
         const grantsData = await grantsResponse.json();
+        const patentsData = await patentsResponse.jason();
         const projectsData = await projectsResponse.json();
 
         setAwards(awardsData);
         setGrants(grantsData);
+        setPatents(patentsData);
         setProjects(projectsData);
 
         // データが空の場合、表示可能な最初のタブをアクティブにする
@@ -47,6 +52,8 @@ const Awards: React.FC = () => {
             setActiveTab("awards");
           } else if (grantsData.length > 0) {
             setActiveTab("grants");
+          } else if (patentsData.length >0) {
+            setActiveTab("patents");
           } else if (projectsData.length > 0) {
             setActiveTab("projects");
           }
@@ -57,6 +64,7 @@ const Awards: React.FC = () => {
         // エラー時は空の配列をセット
         setAwards([]);
         setGrants([]);
+        setPatents([]);
         setProjects([]);
       } finally {
         setIsLoading(false);
@@ -73,7 +81,7 @@ const Awards: React.FC = () => {
   };
 
   // 表示するアイテムの制限を行う関数を追加
-  const getDisplayedItems = <T extends Award | Grant | Project>(
+  const getDisplayedItems = <T extends Award | Grants | Patents | Project>(
     items: T[]
   ): T[] => {
     return showAll ? items : items.slice(0, maxItems);
@@ -81,7 +89,7 @@ const Awards: React.FC = () => {
 
   // 表示するタブがあるかどうかを確認
   const hasAnyData =
-    awards.length > 0 || grants.length > 0 || projects.length > 0;
+    awards.length > 0 || grants.length > 0 || patents.length > 0 || projects.length > 0;
 
   return (
     <section id="awards" className="py-16 bg-background-light">
@@ -127,7 +135,7 @@ const Awards: React.FC = () => {
                         ? "bg-primary text-white"
                         : "bg-white text-gray-700 border border-gray-300 hover:bg-gray-50"
                     } ${
-                      grants.length > 0 || projects.length > 0
+                      grants.length > 0 || patents.length > 0 || projects.length > 0
                         ? "rounded-l-lg"
                         : "rounded-lg"
                     }`}
@@ -145,10 +153,26 @@ const Awards: React.FC = () => {
                         ? "bg-primary text-white"
                         : "bg-white text-gray-700 border border-gray-300 hover:bg-gray-50"
                     } ${awards.length > 0 ? "border-l-0" : ""} ${
-                      projects.length > 0 ? "" : "rounded-r-lg"
+                      patents.length > 0 || projects.length > 0 ? "" : "rounded-r-lg"
                     } ${awards.length === 0 ? "rounded-l-lg" : ""}`}
                   >
                     {t("awards.grants")}
+                  </button>
+                )}
+
+                {patents.length > 0 && (
+                  <button
+                    type="button"
+                    onClick={() => handleTabChange("patents")}
+                    className={`px-4 py-2 text-sm font-medium ${
+                      activeTab === "patents"
+                        ? "bg-primary text-white"
+                        : "bg-white text-gray-700 border border-gray-300 hover:bg-gray-50"
+                    } ${awards.length > 0 || grants.length > 0 ? "border-l-0" : ""} ${
+                      projects.length > 0 ? "" : "rounded-r-lg"
+                    } ${awards.length === 0 && grants.length===0 ? "rounded-l-lg" : ""}`}
+                  >
+                    {t("awards.patents")}
                   </button>
                 )}
 
@@ -161,7 +185,7 @@ const Awards: React.FC = () => {
                         ? "bg-primary text-white"
                         : "bg-white text-gray-700 border border-gray-300 border-l-0 hover:bg-gray-50"
                     } ${
-                      awards.length === 0 && grants.length === 0
+                      awards.length === 0 && grants.length === 0 && patents.length === 0
                         ? "rounded-l-lg"
                         : ""
                     }`}
@@ -249,6 +273,96 @@ const Awards: React.FC = () => {
                             grant.descriptionJa.trim() !== "" && (
                               <p className="mt-2 text-gray-600">
                                 {grant.descriptionJa}
+                              </p>
+                            )}
+                      </div>
+                    ))}
+                  </div>
+                  {grants.length > maxItems && !showAll && (
+                    <div className="text-center mt-6">
+                      <button
+                        onClick={() => setShowAll(true)}
+                        className="bg-secondary hover:bg-secondary-light px-3 py-1 rounded text-sm transition-colors text-white"
+                      >
+                        {t("awards.showAll")}
+                      </button>
+                    </div>
+                  )}
+                </>
+              )}
+
+              {/* 特許等 */}
+              {activeTab === "patents" && patents.length > 0 && (
+                <>
+                  <div className="grid md:grid-cols-2 gap-4">
+                    {getDisplayedItems(grants).map((grant) => (
+                      <div
+                        key={grant.id}
+                        className="p-4 bg-white rounded-lg shadow-sm"
+                      >
+                        <h4 className="text-lg font-medium text-primary">
+                          {i18n.language == "en" ? patent.title : patent.titleJa}{" "}
+                          // {i18n.language == "en"
+                          //  ? grant.subject
+                          //  : grant.subjectJa}
+                        </h4>
+                        <p className="text-gray-600">
+                          {patent.applicationNumber && patent.applicationNumber.trim() !== "" ? (
+                            <>
+                              <span className="font-medium">
+                                {patent.applicationNumber}
+                              </span>{" "}
+                              •{" "}
+                            </>
+                          ) : null}
+                          {patent.applicationDate}
+                        </p>
+                        <p className="text-gray-600">
+                          {patent.publicationNumber && patent.publicationNumber.trim() !== "" ? (
+                            <>
+                              <span className="font-medium">
+                                {patent.publicationNumber}
+                              </span>{" "}
+                              •{" "}
+                            </>
+                          ) : null}
+                          {patent.publicationDate}
+                        </p>
+                        <p className="text-gray-600">
+                          {patent.patentNumber && patent.patentNumber.trim() !== "" ? (
+                            <>
+                              <span className="font-medium">
+                                {patent.patentNumber}
+                              </span>{" "}
+                              •{" "}
+                            </>
+                          ) : null}
+                          {patent.issueDate}
+                        </p>
+                        {i18n.language == "en"
+                          ? patent.applicant &&
+                            patent.applicant.trim() !== "" && (
+                              <p className="mt-2 text-gray-600">
+                                {patent.applicant}
+                              </p>
+                            )
+                          : patent.applicantJa &&
+                            patent.applicantJa.trim() !== "" && (
+                              <p className="mt-2 text-gray-600">
+                                {patent.applicantJa}
+                              </p>
+                            )}
+                        {i18n.language == "en"
+                          ? patent.authors &&
+                            patent.authors.trim() !== "" && (
+                              <p className="mt-2 text-gray-600">
+                                {patent.authors}
+                              </p>
+                            )
+                          : patent.authorsJa &&
+                            patent.authorsJa.trim() !== "" && (
+                              <p className="mt-2 text-gray-600">
+                                {patent.authorsJa}
                               </p>
                             )}
                       </div>
