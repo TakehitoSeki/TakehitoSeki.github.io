@@ -14,7 +14,7 @@ const Publications: React.FC = () => {
   const [misc, setMisc] = useState<Misc[]>([]);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [showAll, setShowAll] = useState<boolean>(false);
-  const maxItems = 5;
+  const maxItems = 10;
 
   // 年のリストを取得
   useEffect(() => {
