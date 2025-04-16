@@ -38,7 +38,7 @@ const Awards: React.FC = () => {
         // 各データを解析
         const awardsData = await awardsResponse.json();
         const grantsData = await grantsResponse.json();
-        const patentsData = await patentsResponse.jason();
+        const patentsData = await patentsResponse.json();
         const projectsData = await projectsResponse.json();
 
         setAwards(awardsData);
