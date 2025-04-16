@@ -27,7 +27,7 @@ const Awards: React.FC = () => {
         const projectsPath = `./content/etc/projects_${i18n.language}.json`;
 
         // 並列でデータをフェッチ
-        const [awardsResponse, grantsResponse, projectsResponse] =
+        const [awardsResponse, grantsResponse, patentsResponse, projectsResponse] =
           await Promise.all([
             fetch(awardsPath),
             fetch(grantsPath),
@@ -368,7 +368,7 @@ const Awards: React.FC = () => {
                       </div>
                     ))}
                   </div>
-                  {grants.length > maxItems && !showAll && (
+                  {patents.length > maxItems && !showAll && (
                     <div className="text-center mt-6">
                       <button
                         onClick={() => setShowAll(true)}
