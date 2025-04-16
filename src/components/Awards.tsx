@@ -303,9 +303,9 @@ const Awards: React.FC = () => {
                         key={patent.id}
                         className="p-4 bg-white rounded-lg shadow-sm"
                       >
-                        <h4 className="text-lg font-medium text-primary">
+                        <h5 className="text-lg font-medium text-primary">
                           {i18n.language == "en" ? patent.title : patent.titleJa}{" "}
-                        </h4>
+                        </h5>
                         <p className="text-gray-600">
                           {patent.applicationNumber && patent.applicationNumber.trim() !== "" ? (
                             <>
