@@ -49,6 +49,13 @@
     "honorsAndAwards": "Honors & Awards",
     "grants": "Grants & Funding",
     "patents": "Patents",
+    "applicationNumber": "Application Number",
+    "publicationNumber": "Publication Number",
+    "patentNumber": "Patent Number",
+    "applicationDate": "Application Date",
+    "publicationDate": "Publication Date",
+    "registrationDate": "Registration Date",
+    "issueDate": "Issue Date",
     "projects": "Projects",
     "noData": "No data available.",
     "showAll": "Show All"
