@@ -49,6 +49,13 @@
     "honorsAndAwards": "受賞歴",
     "grants": "研究助成",
     "patents": "特許等",
+    "applicationNumber": "出願番号",
+    "publicationNumber": "公開番号",
+    "patentNumber": "特許番号",
+    "applicationDate": "出願日",
+    "publicationDate": "公開日",
+    "registrationDate": "登録日",
+    "issueDate": "発行日",
     "projects": "プロジェクト",
     "noData": "データがありません。",
     "showAll": "すべて表示"
