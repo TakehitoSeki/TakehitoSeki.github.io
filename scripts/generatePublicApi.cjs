@@ -261,7 +261,7 @@ const formattedPatents = patentsResult.data
     titleJa: patents['産業財産権名(日本語)'] || patents['産業財産権名(英語)'] || 'Untitled',
     applicationNumber: patents['出願番号'] || '',
     publicationNumber: patents['公開番号'] || '',
-    putentNumber: patents['特許番号/登録番号'] || '',
+    patentNumber: patents['特許番号/登録番号'] || '',
     applicant: patents['出願人(機関)(英語)'] || patents['出願人(機関)(日本語)'] || '',
     applicantJa: patents['出願人(機関)(日本語)'] || patents['出願人(機関)(英語)'] || '',
     applicationDate: patents['出願日'] || '',
