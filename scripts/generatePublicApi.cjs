@@ -85,8 +85,10 @@ const formattedPapers = papersResult.data
   }
 
   const authorshipRoles = String(paper['担当区分'] || '')
-  .split(',')
-  .map(s => s.trim());
+    .replace(/[\[\]]/g, '')
+    .split(',')
+    .map(s => s.trim())
+    .filter(Boolean);
     
   return {
     id: paper.ID || `paper-${Math.random().toString(36).substr(2, 9)}`,
