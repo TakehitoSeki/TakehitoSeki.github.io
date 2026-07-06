@@ -298,7 +298,7 @@ const Publications: React.FC = () => {
                         <div className="md:flex-1">
                           <div className="flex items-start gap-2 mb-2">
                             {presentation.isInvited && (
-                              <span className="bg-accent text-white text-xs px-2 py-1 rounded-full font-medium">
+                              <span className="bg-accent text-white text-xs px-2 py-1 rounded-full font-medium whitespace-nowrap">
                                 {t("publications.invited")}
                               </span>
                             )}
