@@ -205,7 +205,7 @@ const Publications: React.FC = () => {
               papers.length > 0 ? (
                 <>
                   {getDisplayedItems(papers).map((paper) => (
-                      <div
+                    <div
                         key={paper.id}
                         className="p-4 bg-white border rounded-lg shadow-sm hover:shadow transition-shadow"
                       >
@@ -263,7 +263,6 @@ const Publications: React.FC = () => {
                           )}
                         </div>
                       </div>
-                    </div>
                   ))}
                   {papers.length > maxItems && !showAll && (
                     <div className="text-center mt-6">
