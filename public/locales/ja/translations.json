@@ -39,7 +39,10 @@
     "misc": "その他",
     "allYears": "全年度",
     "mainWork": "主要業績",
-    "invited": "招待講演",
+    "firstAuthor": "筆頭著者",
+    "lastAuthor": "最終著者",
+    "correspondingAuthor": "責任著者",
+    "invited": "招待",
     "noPapers": "該当年の論文はありません。",
     "noPresentations": "該当年の発表はありません。",
     "noMisc": "該当年のデータはありません。",
@@ -67,6 +70,9 @@
     "work": "職歴",
     "present": "現在",
     "noData": "経歴データがありません。"
+  },
+  "researchProject": {
+    "pi": "研究代表者"
   },
   "contact": {
     "title": "連絡先",
