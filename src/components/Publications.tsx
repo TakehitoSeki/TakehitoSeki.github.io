@@ -205,51 +205,52 @@ const Publications: React.FC = () => {
               papers.length > 0 ? (
                 <>
                   {getDisplayedItems(papers).map((paper) => (
-                    <div
-                      key={paper.id}
-                      className="p-4 bg-white border rounded-lg shadow-sm hover:shadow transition-shadow"
-                    >
-                      <div className="flex flex-col md:flex-row md:items-start gap-2">
-                        <div className="md:flex-1">
-                          <div className="flex items-start gap-2 mb-2">
+                      <div
+                        key={paper.id}
+                        className="p-4 bg-white border rounded-lg shadow-sm hover:shadow transition-shadow"
+                      >
+                        <div>
+                          <div className="mb-2">
                             {paper.isMainWork && (
-                              <span className="bg-accent text-white text-xs px-2 py-1 rounded-full font-medium">
+                              <span className="inline-block mr-2 mb-1 bg-accent text-white text-xs px-2 py-1 rounded-full font-medium whitespace-nowrap">
                                 {t("publications.mainWork")}
                               </span>
                             )}
+                      
                             {paper.isFirstAuthor && (
-                              <span className="bg-accent text-white text-xs px-2 py-1 rounded-full font-medium">
+                              <span className="inline-block mr-2 mb-1 bg-accent text-white text-xs px-2 py-1 rounded-full font-medium whitespace-nowrap">
                                 {t("publications.firstAuthor")}
                               </span>
                             )}
-                          
+                      
                             {paper.isLastAuthor && (
-                              <span className="bg-accent text-white text-xs px-2 py-1 rounded-full font-medium">
+                              <span className="inline-block mr-2 mb-1 bg-accent text-white text-xs px-2 py-1 rounded-full font-medium whitespace-nowrap">
                                 {t("publications.lastAuthor")}
                               </span>
                             )}
-                          
+                      
                             {paper.isCorrespondingAuthor && (
-                              <span className="bg-accent text-white text-xs px-2 py-1 rounded-full font-medium">
+                              <span className="inline-block mr-2 mb-1 bg-accent text-white text-xs px-2 py-1 rounded-full font-medium whitespace-nowrap">
                                 {t("publications.correspondingAuthor")}
                               </span>
                             )}
+                      
                             <h3 className="text-lg font-semibold text-primary">
-                              {i18n.language == "en"
-                                ? paper.title
-                                : paper.titleJa}
+                              {i18n.language == "en" ? paper.title : paper.titleJa}
                             </h3>
                           </div>
+                      
                           <p className="text-gray-700 mb-1">{paper.authors}</p>
+                      
                           <p className="text-gray-600 italic mb-2">
-                            {i18n.language == "en"
-                              ? paper.journal
-                              : paper.journalJa}
+                            {i18n.language == "en" ? paper.journal : paper.journalJa}
                           </p>
+                      
                           <p className="text-gray-500 text-sm">
                             {paper.year}
                             {paper.month ? `.${paper.month}` : ""}
                           </p>
+                      
                           {paper.doi && (
                             <a
                               href={`https://doi.org/${paper.doi}`}
