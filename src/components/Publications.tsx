@@ -217,6 +217,23 @@ const Publications: React.FC = () => {
                                 {t("publications.mainWork")}
                               </span>
                             )}
+                            {paper.isFirstAuthor && (
+                              <span className="bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full font-medium">
+                                {t("publications.firstAuthor")}
+                              </span>
+                            )}
+                          
+                            {paper.isLastAuthor && (
+                              <span className="bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full font-medium">
+                                {t("publications.lastAuthor")}
+                              </span>
+                            )}
+                          
+                            {paper.isCorrespondingAuthor && (
+                              <span className="bg-gray-200 text-gray-700 text-xs px-2 py-1 rounded-full font-medium">
+                                {t("publications.correspondingAuthor")}
+                              </span>
+                            )}
                             <h3 className="text-lg font-semibold text-primary">
                               {i18n.language == "en"
                                 ? paper.title
