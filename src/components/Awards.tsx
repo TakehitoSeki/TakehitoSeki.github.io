@@ -246,6 +246,11 @@ const Awards: React.FC = () => {
                         key={grant.id}
                         className="p-4 bg-white rounded-lg shadow-sm"
                       >
+                        {grant.isPI && (
+                              <span className="bg-accent text-white text-xs px-2 py-1 rounded-full font-medium">
+                                {t("project.pi")}
+                              </span>
+                            )}
                         <h4 className="text-lg font-medium text-primary">
                           {i18n.language == "en" ? grant.title : grant.titleJa}{" "}
                           {i18n.language == "en"
@@ -393,11 +398,6 @@ const Awards: React.FC = () => {
                         rel="noopener noreferrer"
                         className="p-4 bg-white rounded-lg shadow-sm hover:shadow transition-shadow"
                       >
-                        {projects.isPI && (
-                              <span className="bg-accent text-white text-xs px-2 py-1 rounded-full font-medium">
-                                {t("project.pi")}
-                              </span>
-                            )}
                         <h4 className="text-lg font-medium text-primary">
                           {project.title}
                         </h4>
