@@ -64,15 +64,15 @@
     "noData": "データがありません。",
     "showAll": "すべて表示"
   },
+  "grant": {
+    "pi": "研究代表者"
+  },
   "career": {
     "title": "経歴",
     "education": "学歴",
     "work": "職歴",
     "present": "現在",
     "noData": "経歴データがありません。"
-  },
-  "researchProject": {
-    "pi": "研究代表者"
   },
   "contact": {
     "title": "連絡先",
