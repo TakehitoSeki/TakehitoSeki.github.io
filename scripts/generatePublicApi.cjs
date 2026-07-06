@@ -84,7 +84,7 @@ const formattedPapers = papersResult.data
     authorsJa = paper['著者(英語)'].replace(/^\[|\]$/g, '');
   }
 
-  const authorshipRoles = String(researchProject['担当区分'] || '')
+  const authorshipRoles = String(paper['担当区分'] || '')
   .split(',')
   .map(s => s.trim());
     
