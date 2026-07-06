@@ -1,0 +1,54 @@
+[
+  {
+    "id": "41226868",
+    "title": "Development of an Atomic-Resolution Magnetic-Field-Free Electron Microscope and Observation of Atomic Magnetic Fields",
+    "titleJa": "原子分解能磁場フリー電子顕微鏡の開発と原子磁場観察",
+    "authors": "Yuji Kohno,Takehito Seki,Shigeyuki Morishita,Naoya Shibata",
+    "authorsJa": "河野 祐二,関 岳人,森下 茂幸,柴田 直哉",
+    "journal": "Kenbikyo",
+    "journalJa": "顕微鏡",
+    "year": "2022",
+    "month": "12",
+    "doi": "10.11410/kenbikyo.57.3_131",
+    "isMainWork": false
+  },
+  {
+    "id": "40324138",
+    "title": "Crystal Defect Core Studied by Advanced Electron Microscopy",
+    "titleJa": "機能コアにおける先端電子顕微鏡解析",
+    "authors": "Bin Feng,Jiake Wei,Ryo Ishikawa,Takehito Seki,Naoya Shibata,Yuichi Ikuhara",
+    "authorsJa": "馮 斌,魏 家科,石川 亮,関 岳人,柴田 直哉,幾原 雄一",
+    "journal": "Materia Japan",
+    "journalJa": "まてりあ",
+    "year": "2022",
+    "month": "10",
+    "doi": "10.2320/materia.61.640",
+    "isMainWork": false
+  },
+  {
+    "id": "39957954",
+    "title": "Low-dose atomic-resolution imaging using OBF STEM",
+    "titleJa": "OBF STEM法を利用した低ドーズ原子分解能観察",
+    "authors": "Kousuke Ooe,Takehito Seki,Yuji Kohno,Akiho Nakamura,Yuichi Ikuhara,Naoya Shibata",
+    "authorsJa": "大江 耕介,関 岳人,河野 祐二,中村 明穂,幾原 雄一,柴田 直哉",
+    "journal": "Kenbikyo",
+    "journalJa": "顕微鏡",
+    "year": "2022",
+    "month": "08",
+    "doi": "10.11410/kenbikyo.57.2_49",
+    "isMainWork": false
+  },
+  {
+    "id": "36436748",
+    "title": "The Observation of Local Electric Fields in GaN/AlGaN/InGaN Multi-heterostructures by Differential Phase Contrast STEM",
+    "titleJa": "微分位相コントラストSTEMを用いたGaN/AlGaN/InGaNマルチヘテロ接合の局所電場観察",
+    "authors": "Satoko Toyama,Takehito Seki,Yuya Kanitani,Shigetaka Tomiya,Yuichi Ikuhara,Naoya Shibata",
+    "authorsJa": "遠山慧子,関岳人,蟹谷裕也,冨谷茂隆,幾原雄一,柴田直哉",
+    "journal": "IEEJ Transactions on Electronics, Information and Systems",
+    "journalJa": "電気学会論文誌C（電子・情報・システム部門誌）",
+    "year": "2022",
+    "month": "03",
+    "doi": "10.1541/ieejeiss.142.367",
+    "isMainWork": false
+  }
+]

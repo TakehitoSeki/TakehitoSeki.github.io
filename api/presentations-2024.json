@@ -1,0 +1,58 @@
+[
+  {
+    "id": "48500645",
+    "title": "Developing STEM Techniques with Segmented Detectors and Exploring Pixelated Detector Applications",
+    "titleJa": "Developing STEM Techniques with Segmented Detectors and Exploring Pixelated Detector Applications",
+    "speakers": "Takehito Seki",
+    "speakersJa": "Takehito Seki",
+    "conference": "The 2nd China 4D-STEM Forum",
+    "conferenceJa": "The 2nd China 4D-STEM Forum",
+    "date": "2024-12-09",
+    "year": "2024",
+    "place": "Online",
+    "placeJa": "Online",
+    "isInvited": true
+  },
+  {
+    "id": "48484833",
+    "title": "Advancing Scanning Transmission Electron Microscopy Through Instrumentation and Technique Development",
+    "titleJa": "Advancing Scanning Transmission Electron Microscopy Through Instrumentation and Technique Development",
+    "speakers": "Takehito Seki",
+    "speakersJa": "Takehito Seki",
+    "conference": "Hong Kong Advanced Transmission Electron Microscopy 2024",
+    "conferenceJa": "Hong Kong Advanced Transmission Electron Microscopy 2024",
+    "date": "2024-11-16",
+    "year": "2024",
+    "place": "Hong Kong",
+    "placeJa": "Hong Kong",
+    "isInvited": true
+  },
+  {
+    "id": "48397750",
+    "title": "STEM位相イメージング法の最近の展開",
+    "titleJa": "STEM位相イメージング法の最近の展開",
+    "speakers": "関 岳人, 柴田 直哉",
+    "speakersJa": "関 岳人, 柴田 直哉",
+    "conference": "日本顕微鏡学会シンポジウム",
+    "conferenceJa": "日本顕微鏡学会シンポジウム",
+    "date": "2024-11-03",
+    "year": "2024",
+    "place": "北海道大学, 北海道",
+    "placeJa": "北海道大学, 北海道",
+    "isInvited": true
+  },
+  {
+    "id": "48397730",
+    "title": "電子顕微鏡による材料観察技術の最先端",
+    "titleJa": "電子顕微鏡による材料観察技術の最先端",
+    "speakers": "関 岳人",
+    "speakersJa": "関 岳人",
+    "conference": "先端電子顕微鏡分析技術講演会",
+    "conferenceJa": "先端電子顕微鏡分析技術講演会",
+    "date": "2024-08-20",
+    "year": "2024",
+    "place": "TDK株式会社八幡テクニカルセンター",
+    "placeJa": "TDK株式会社八幡テクニカルセンター",
+    "isInvited": true
+  }
+]

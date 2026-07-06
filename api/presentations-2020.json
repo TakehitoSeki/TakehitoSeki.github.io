@@ -1,0 +1,30 @@
+[
+  {
+    "id": "30974417",
+    "title": "STEM 位相イメージングの理論と応用",
+    "titleJa": "STEM 位相イメージングの理論と応用",
+    "speakers": "関 岳人,幾原 雄一,柴田 直哉",
+    "speakersJa": "関 岳人,幾原 雄一,柴田 直哉",
+    "conference": "日本顕微鏡学会第63回シンポジウム",
+    "conferenceJa": "日本顕微鏡学会第63回シンポジウム",
+    "date": "2020-11-20",
+    "year": "2020",
+    "place": "オンライン",
+    "placeJa": "オンライン",
+    "isInvited": true
+  },
+  {
+    "id": "24750429",
+    "title": "DPCによる電磁場観察法",
+    "titleJa": "DPCによる電磁場観察法",
+    "speakers": "関 岳人,幾原 雄一,柴田 直哉",
+    "speakersJa": "関 岳人,幾原 雄一,柴田 直哉",
+    "conference": "DPC技術講演会",
+    "conferenceJa": "DPC技術講演会",
+    "date": "2020-01-31",
+    "year": "2020",
+    "place": "村田製作所野洲事業所, 滋賀県",
+    "placeJa": "村田製作所野洲事業所, 滋賀県",
+    "isInvited": true
+  }
+]

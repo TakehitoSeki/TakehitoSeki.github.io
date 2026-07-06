@@ -1,0 +1,101 @@
+{
+  "header": {
+    "name": "Takehito Seki"
+  },
+  "nav": {
+    "bio": "About",
+    "publications": "Publications",
+    "awards": "Awards",
+    "career": "Career",
+    "contact": "Contact"
+  },
+  "bio": {
+    "name": "Takehito Seki",
+    "nameJp": "関 岳人",
+    "phd": "PhD",
+    "phdJp": "博士（工学）",
+    "position": "Associate Professor",
+    "affiliation": "Institute of Engineering Innovation, The University of Tokyo",
+    "github": "",
+    "scholar": "https://scholar.google.com/citations?user=9aF8exwAAAAJ",
+    "orcid": "https://orcid.org/0000-0001-5437-6351",
+    "researchmap": "https://researchmap.jp/sekitake",
+    "linkedin": "",
+    "researchInterests": "Research Interests",
+    "researchTags": [
+      "Scanning Transmission Electron Microscopy (STEM)",
+      "Optimum Brigh Field (OBF) STEM",
+      "Differential Phase Contrast (DPC) STEM",
+      "Steel",
+      "Quasicrystals",
+      "Magnetic materials",
+      "Semiconductors"
+    ]
+  },
+  "publications": {
+    "title": "Publications",
+    "papers": "Papers",
+    "presentations": "Presentations",
+    "misc": "Misc",
+    "allYears": "All Years",
+    "mainWork": "Main Work",
+    "firstAuthor": "Lead",
+    "lastAuthor": "Last",
+    "correspondingAuthor": "Corr.",
+    "invited": "Invited",
+    "noPapers": "No papers found for this year.",
+    "noPresentations": "No presentations found for this year.",
+    "noMisc": "No misc. found for this year.",
+    "showAll": "Show All"
+  },
+  "awards": {
+    "title": "Awards & Projects",
+    "honorsAndAwards": "Honors & Awards",
+    "grants": "Grants & Funding",
+    "patents": "Patents",
+    "applicationNumber": "Application Number",
+    "publicationNumber": "Publication Number",
+    "patentNumber": "Patent Number",
+    "applicationDate": "Application Date",
+    "publicationDate": "Publication Date",
+    "registrationDate": "Registration Date",
+    "issueDate": "Issue Date",
+    "projects": "Projects",
+    "noData": "No data available.",
+    "showAll": "Show All"
+  },
+  "grant": {
+    "pi": "PI"
+  },
+  "career": {
+    "title": "Career",
+    "education": "Education",
+    "work": "Work Experience",
+    "present": "Present",
+    "noData": "No career data available."
+  },
+  "contact": {
+    "title": "Contact",
+    "info": "Contact Information",
+    "location": "Location",
+    "relatedLinks": "Related Links",
+    "email": "Email",
+    "emailAdress": "seki[at]sigma.t.u-tokyo.ac.jp",
+    "phone": "Phone",
+    "phoneNumber": "+81-3-5841-2325",
+    "address": "Address",
+    "addressLine1": "Electron Microscopy and Materials Science Laboratory",
+    "addressLine2": "The University of Tokyo",
+    "addressLine3": "Room 622, Faculty of Engineering Bldg. 9, 2-11-16 Yayoi, Bunkyo-ku, Tokyo 113-0032, Japan",
+    "socialMedia": "",
+    "linkedin": "",
+    "facebook": "",
+    "twitter": "",
+    "labName": "Electron Microscopy and Materials Science Laboratory",
+    "labURL": "https://www.saaf.t.u-tokyo.ac.jp/?lang=en"
+  },
+  "footer": {
+    "allRightsReserved": "All Rights Reserved.",
+    "templateText": "This website is based on a template available on "
+  }
+}

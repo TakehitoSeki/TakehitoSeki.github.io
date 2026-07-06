@@ -1,0 +1,44 @@
+[
+  {
+    "id": "33859948",
+    "title": "Theory and Application of phase imaging in STEM",
+    "titleJa": "STEM 位相イメージングの理論と応用",
+    "speakers": "Takehito Seki",
+    "speakersJa": "関 岳人",
+    "conference": "新学術領域研究「機能コアの材料科学」領域全体会議",
+    "conferenceJa": "新学術領域研究「機能コアの材料科学」領域全体会議",
+    "date": "2021-09-28",
+    "year": "2021",
+    "place": "オンライン",
+    "placeJa": "オンライン",
+    "isInvited": true
+  },
+  {
+    "id": "32896567",
+    "title": "Ultra-high Contrast Imaging in Scanning Transmission Electron Microscopy",
+    "titleJa": "Ultra-high Contrast Imaging in Scanning Transmission Electron Microscopy",
+    "speakers": "Takehito Seki,Kousuke Ooe,Yuichi Ikuhara,Naoya Shibata",
+    "speakersJa": "Takehito Seki,Kousuke Ooe,Yuichi Ikuhara,Naoya Shibata",
+    "conference": "Monash-Melbourne Imaging and Optical Physics seminar",
+    "conferenceJa": "Monash-Melbourne Imaging and Optical Physics seminar",
+    "date": "2021-07-13",
+    "year": "2021",
+    "place": "online",
+    "placeJa": "オンライン",
+    "isInvited": true
+  },
+  {
+    "id": "32850410",
+    "title": "Theory and Application of phase imaging in STEM",
+    "titleJa": "STEM 位相法の理論と応用",
+    "speakers": "Takehito Seki,Yuichi Ikuhara,Naoya Shibata",
+    "speakersJa": "関 岳人,幾原 雄一,柴田 直哉",
+    "conference": "Annual Meeting of the Japanese Society of Microscopy",
+    "conferenceJa": "日本顕微鏡学会学術講演会",
+    "date": "2021-06-16",
+    "year": "2021",
+    "place": "つくば国際会議場",
+    "placeJa": "つくば国際会議場",
+    "isInvited": true
+  }
+]

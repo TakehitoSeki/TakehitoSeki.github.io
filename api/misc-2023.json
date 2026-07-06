@@ -1,0 +1,67 @@
+[
+  {
+    "id": "44336281",
+    "title": "原子分解能磁場フリー電子顕微鏡による超高分解能磁場観察",
+    "titleJa": "原子分解能磁場フリー電子顕微鏡による超高分解能磁場観察",
+    "authors": "関 岳人, 河野 祐二, 幾原 雄一, 柴田 直哉",
+    "authorsJa": "関 岳人, 河野 祐二, 幾原 雄一, 柴田 直哉",
+    "journal": "表面と真空",
+    "journalJa": "表面と真空",
+    "year": "2023",
+    "month": "12",
+    "doi": "10.1380/vss.66.683",
+    "isMainWork": false
+  },
+  {
+    "id": "43169863",
+    "title": "走査透過電子顕微鏡による原子レベルの磁場観察",
+    "titleJa": "走査透過電子顕微鏡による原子レベルの磁場観察",
+    "authors": "関 岳人, 河野 祐二, 幾原 雄一, 柴田 直哉",
+    "authorsJa": "関 岳人, 河野 祐二, 幾原 雄一, 柴田 直哉",
+    "journal": "固体物理",
+    "journalJa": "固体物理",
+    "year": "2023",
+    "month": "07",
+    "doi": "",
+    "isMainWork": false
+  },
+  {
+    "id": "42909060",
+    "title": "Low-dose atomic-resolution observation of beam-sensitive materials via OBF STEM imaging technique",
+    "titleJa": "Low-dose atomic-resolution observation of beam-sensitive materials via OBF STEM imaging technique",
+    "authors": "Kousuke Ooe, Takehito Seki, Yuji Kohno, Akiho Nakamura, Yuichi Ikuhara, Naoya Shibata",
+    "authorsJa": "Kousuke Ooe, Takehito Seki, Yuji Kohno, Akiho Nakamura, Yuichi Ikuhara, Naoya Shibata",
+    "journal": "JEOL News",
+    "journalJa": "JEOL News",
+    "year": "2023",
+    "month": "07",
+    "doi": "",
+    "isMainWork": false
+  },
+  {
+    "id": "42909043",
+    "title": "OBF STEMによる電子線敏感材料の低ドーズ原子分解能観察",
+    "titleJa": "OBF STEMによる電子線敏感材料の低ドーズ原子分解能観察",
+    "authors": "大江 耕介, 関 岳人, 河野 祐二, 中村 明穂, 幾原 雄一, 柴田 直哉",
+    "authorsJa": "大江 耕介, 関 岳人, 河野 祐二, 中村 明穂, 幾原 雄一, 柴田 直哉",
+    "journal": "日本電子News",
+    "journalJa": "日本電子News",
+    "year": "2023",
+    "month": "07",
+    "doi": "",
+    "isMainWork": false
+  },
+  {
+    "id": "42792309",
+    "title": "Atomic-scale Magnetic Field Imaging by Scanning Transmission Electron Microscopy",
+    "titleJa": "走査透過電子顕微鏡による原子レベルの磁場観察",
+    "authors": "Takehito Seki,Yuji Kohno,Yuichi Ikuhara,Naoya Shibata",
+    "authorsJa": "関 岳人,河野 祐二,幾原 雄一,柴田 直哉",
+    "journal": "Solid State Physics",
+    "journalJa": "固体物理",
+    "year": "2023",
+    "month": "07",
+    "doi": "",
+    "isMainWork": false
+  }
+]

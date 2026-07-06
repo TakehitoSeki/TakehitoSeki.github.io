@@ -1,0 +1,58 @@
+[
+  {
+    "id": "53919747",
+    "title": "Mapping Electromagnetic Fields and Atomic Thermal Vibrations using tDPC-STEM and Atomic-Scale TDS Analysis",
+    "titleJa": "Mapping Electromagnetic Fields and Atomic Thermal Vibrations using tDPC-STEM and Atomic-Scale TDS Analysis",
+    "speakers": "Takehito Seki,Satoko Toyama,Naoya Shibata",
+    "speakersJa": "Takehito Seki,Satoko Toyama,Naoya Shibata",
+    "conference": "Microscopy & Microanalysis",
+    "conferenceJa": "Microscopy & Microanalysis",
+    "date": "2026-08-05",
+    "year": "2026",
+    "place": "Milwaukee, US",
+    "placeJa": "Milwaukee, US",
+    "isInvited": true
+  },
+  {
+    "id": "53919777",
+    "title": "走査透過電子顕微鏡による高分解能磁気構造観察: 磁壁幅の精密測定と局所磁気定数評価",
+    "titleJa": "走査透過電子顕微鏡による高分解能磁気構造観察: 磁壁幅の精密測定と局所磁気定数評価",
+    "speakers": "関岳人",
+    "speakersJa": "関岳人",
+    "conference": "日本磁気学会第261回研究会/ 第3回バルク軟磁性材料専門研究会",
+    "conferenceJa": "日本磁気学会第261回研究会/ 第3回バルク軟磁性材料専門研究会",
+    "date": "2026-07-21",
+    "year": "2026",
+    "place": "お茶の水, 東京",
+    "placeJa": "お茶の水, 東京",
+    "isInvited": true
+  },
+  {
+    "id": "53890234",
+    "title": "Entropy-Stabilized Dynamic Grain-Boundary Structure Revealed by Magnetic-field-Free STEM",
+    "titleJa": "Entropy-Stabilized Dynamic Grain-Boundary Structure Revealed by Magnetic-field-Free STEM",
+    "speakers": "Takehito Seki",
+    "speakersJa": "Takehito Seki",
+    "conference": "International Conference on Recrystallization and Grain Growth",
+    "conferenceJa": "International Conference on Recrystallization and Grain Growth",
+    "date": "2026-05-29",
+    "year": "2026",
+    "place": "Hamilton",
+    "placeJa": "Hamilton",
+    "isInvited": true
+  },
+  {
+    "id": "53890256",
+    "title": "Extending Scanning Transmission Electron Microscopy with Modern Detectors",
+    "titleJa": "Extending Scanning Transmission Electron Microscopy with Modern Detectors",
+    "speakers": "Takehito Seki",
+    "speakersJa": "関 岳人",
+    "conference": "Annual Meeting of the Japanese Society of Microscopy",
+    "conferenceJa": "日本顕微鏡学会学術講演会",
+    "date": "2026-05-25",
+    "year": "2026",
+    "place": "仙台国際センター, 宮城県",
+    "placeJa": "仙台国際センター, 宮城県",
+    "isInvited": true
+  }
+]
