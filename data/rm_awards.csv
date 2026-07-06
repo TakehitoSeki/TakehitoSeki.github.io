@@ -1,5 +1,6 @@
 awards
 アクション名,アクションタイプ,類似業績マージ優先度,ID,賞名(日本語),賞名(英語),受賞者・グループ(日本語),受賞者・グループ(英語),タイトル(日本語),タイトル(英語),授与機関(日本語),授与機関(英語),概要(日本語),概要(英語),受賞年月,受賞区分,受賞国・地域,URL,主要な業績かどうか,公開の有無
+insert,merge,null,53890217,"JCS-JAPAN 優秀論文賞","JCS-JAPAN Outstanding Papers","[Shinsuke Hashimoto,Shun Kondo,Takehito Seki,Yuichi Ikuhara,Naoya Shibata]","[Shinsuke Hashimoto,Shun Kondo,Takehito Seki,Yuichi Ikuhara,Naoya Shibata]","Relaxation mechanism of interfacial lattice misfit between PZT and SRO in a thin-film actuator","Relaxation mechanism of interfacial lattice misfit between PZT and SRO in a thin-film actuator",日本セラミックス協会,"The Ceramic Society of Japan",null,null,2026-06,null,null,null,false,disclosed
 insert,merge,null,46763210,和文誌賞,null,"[大江 耕介,関 岳人,河野祐二,中村明穂,幾原雄一,柴田直哉]",null,"OBF STEM法を利用した低ドーズ原子分解能観察",null,日本顕微鏡学会,null,null,null,2024-05,null,null,null,false,disclosed
 insert,merge,null,46648707,萌芽賞,null,"[関 岳人]",null,null,null,東京大学大学院工学系研究科,null,null,null,2024-03,null,null,null,false,disclosed
 insert,merge,null,41588592,蔡安邦賞,"AnPang Tsai Award","[関 岳人]","[Takehito Seki]",null,null,準結晶研究会,"Quasicrystals meeting",null,null,2023-03,japan_society,null,null,false,disclosed
