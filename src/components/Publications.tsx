@@ -234,6 +234,12 @@ const Publications: React.FC = () => {
                                 {t("publications.correspondingAuthor")}
                               </span>
                             )}
+
+                            {paper.isInvited && (
+                              <span className="inline-block mr-2 mb-1 bg-accent text-white text-xs px-2 py-1 rounded-full font-medium whitespace-nowrap">
+                                {t("publications.invited")}
+                              </span>
+                            )}
                       
                             <h3 className="text-lg font-semibold text-primary">
                               {i18n.language == "en" ? paper.title : paper.titleJa}
