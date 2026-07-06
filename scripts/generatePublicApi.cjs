@@ -227,6 +227,11 @@ const formattedResearchProjects = researchProjectsResult.data
     return disclosureStatus && disclosureStatus.toLowerCase() === 'disclosed';
   })
   .map(researchProject => {
+  const projectRoles = String(researchProject['担当区分'] || '')
+    .replace(/[\[\]"']/g, '')
+    .split(',')
+    .map(s => s.trim())
+    .filter(Boolean);
   return {
     id: researchProject.ID || `researchProject-${Math.random().toString(36).substr(2, 9)}`,
     title: researchProject['制度名(英語)'] || researchProject['制度名(日本語)'] || '',
@@ -243,7 +248,7 @@ const formattedResearchProjects = researchProjectsResult.data
     yearTo: researchProject['研究期間(To)'] ? researchProject['研究期間(To)'].substring(0, 4) : '',
     monthTo: researchProject['研究期間(To)'] ? researchProject['研究期間(To)'].substring(5, 7) : '',
     isMainWork: isTrue(researchProject['主要な業績かどうか']),
-    isPI: researchProject['担当区分'] === '研究代表者'
+    isPI: projectRoles.includes('principal_investigator')
   };
 });
 
