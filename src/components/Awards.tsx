@@ -248,7 +248,7 @@ const Awards: React.FC = () => {
                       >
                         {grant.isPI && (
                               <span className="bg-accent text-white text-xs px-2 py-1 rounded-full font-medium">
-                                {t("project.pi")}
+                                {t("grant.pi")}
                               </span>
                             )}
                         <h4 className="text-lg font-medium text-primary">
