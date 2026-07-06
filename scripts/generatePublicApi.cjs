@@ -84,6 +84,10 @@ const formattedPapers = papersResult.data
     authorsJa = paper['著者(英語)'].replace(/^\[|\]$/g, '');
   }
 
+  const authorshipRoles = String(researchProject['担当区分'] || '')
+  .split(',')
+  .map(s => s.trim());
+    
   return {
     id: paper.ID || `paper-${Math.random().toString(36).substr(2, 9)}`,
     title: paper['タイトル(英語)'] || paper['タイトル(日本語)'] || 'Untitled',
@@ -95,7 +99,11 @@ const formattedPapers = papersResult.data
     year: paper['出版年月'] ? paper['出版年月'].substring(0, 4) : '',
     month: paper['出版年月'] ? paper['出版年月'].substring(5, 7) : '',
     doi: paper.DOI || '',
-    isMainWork: isTrue(paper['主要な業績かどうか'])
+    isMainWork: isTrue(paper['主要な業績かどうか']),
+    isInvited: isTrue(paper['招待の有無']),
+    isFirstAuthor: authorshipRoles.includes('lead'),
+    isLastAuthor: authorshipRoles.includes('last'),
+    isCorrespondingAuthor: authorshipRoles.includes('corresponding')
   };
 });
 
@@ -189,7 +197,7 @@ const formattedMisc = miscResult.data
     year: misc['出版年月'] ? misc['出版年月'].substring(0, 4) : '',
     month: misc['出版年月'] ? misc['出版年月'].substring(5, 7) : '',
     doi: misc.DOI || '',
-    isMainWork: isTrue(misc['主要な業績かどうか'])
+    isMainWork: isTrue(misc['主要な業績かどうか']),
   };
 });
 
@@ -232,7 +240,8 @@ const formattedResearchProjects = researchProjectsResult.data
     monthFrom: researchProject['研究期間(From)'] ? researchProject['研究期間(From)'].substring(5, 7) : '',
     yearTo: researchProject['研究期間(To)'] ? researchProject['研究期間(To)'].substring(0, 4) : '',
     monthTo: researchProject['研究期間(To)'] ? researchProject['研究期間(To)'].substring(5, 7) : '',
-    isMainWork: isTrue(researchProject['主要な業績かどうか'])
+    isMainWork: isTrue(researchProject['主要な業績かどうか']),
+    isPI: researchProject['担当区分'] === '研究代表者'
   };
 });
 
