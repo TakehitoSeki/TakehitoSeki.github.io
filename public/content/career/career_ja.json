@@ -1,11 +1,21 @@
 [
   {
+    "id": "career-8",
+    "position": "准教授",
+    "organization": "東京大学大学院工学系研究科総合研究機構",
+    "location": "東京",
+    "startDate": "2026/6",
+    "endDate": "",
+    "description": "",
+    "type": "work"
+  },
+  {
     "id": "career-7",
     "position": "講師",
     "organization": "東京大学大学院工学系研究科総合研究機構",
     "location": "東京",
     "startDate": "2024/3",
-    "endDate": "",
+    "endDate": "2026/5",
     "description": "",
     "type": "work"
   },
