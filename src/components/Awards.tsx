@@ -257,7 +257,9 @@ const Awards: React.FC = () => {
                             ? grant.subject
                             : grant.subjectJa}
                         </h4>
-                        <p className="text-gray-700">{grant.funder}</p>
+                        <p className="text-gray-700">
+                          {i18n.language == "en" ? grant.funder : grant.titleJa}
+                        </p>
                         <p className="text-gray-600">
                           {grant.number && grant.number.trim() !== "" ? (
                             <>
